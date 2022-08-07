@@ -27,3 +27,7 @@ body {
   grid-area: section;
 }
 
+
+.form-control {
+  margin:10px 0;
+}
