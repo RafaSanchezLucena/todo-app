@@ -15,7 +15,10 @@ const loadInitial = () => {
   // Comprueba si en localStorage hay datos grabados.
   if (datos != undefined) {
     const data = datos.map(
-      (elemento, index) => /*html*/ `<div id="${index}" class="task">
+      (
+        elemento,
+        index
+      ) => /*html*/ `<div id="${index}" class="task animate__animated">
                                 <div class="form-check">
                                   <input onchange="done(${index})" value="true" class="form-check-input"          type="checkbox" id="${
         index + 100
@@ -65,7 +68,10 @@ const loadTasks = () => {
   const datos = JSON.parse(localStorage.getItem("tasks"));
 
   const data = datos.map(
-    (elemento, index) => /*html*/ `<div id="${index}" class="task">
+    (
+      elemento,
+      index
+    ) => /*html*/ `<div id="${index}" class="task animate__animated">
                                 <div class="form-check">
                                   <input onchange="done(${index})" value="true" class="form-check-input"       type="checkbox" id="${
       index + 100
@@ -98,9 +104,12 @@ const loadTasks = () => {
 
 // Elimina una tarea
 window.deleteTask = (index) => {
-  tasksList.splice(index, 1);
-  localStorage.setItem("tasks", JSON.stringify(tasksList));
-  loadTasks();
+  document.getElementById(index).classList.add("animate__zoomOut");
+  setTimeout(() => {
+    tasksList.splice(index, 1);
+    localStorage.setItem("tasks", JSON.stringify(tasksList));
+    loadTasks();
+  }, 500);
 };
 
 // Aplica el estilo cuando marcamos la casilla del checkbox al si el valor de la propiedad "state" es

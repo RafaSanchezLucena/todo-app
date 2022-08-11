@@ -4,6 +4,7 @@
 }
 
 .weather {
+  position:fixed;
   border-radius: 8px;
   background: #e0e0e0;
   box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
