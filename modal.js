@@ -5,8 +5,8 @@ const input = document.querySelector(".modal__input");
 
 const modal = document.querySelector(".modal");
 
-export // Carga de datos inicial.
-const cargaInicial = () => {
+// Carga de datos inicial.
+export const cargaInicial = () => {
   try {
     // Se comprueba si hay datos grabados en la "localStorage", en caso afirmativo se cargan los datos y en caso
     // contrario se muestra el modal para introducir el nombre de la población.

@@ -1,19 +1,28 @@
 .container-form {
-  margin: 100px 50px;
+  margin: 100px 50px 50px 50px;
 }
 
 .container-tasks {
-  margin: 100px 50px;
+  margin: 0 50px;
 }
 
 .task {
-  border: 1px solid #000;
-  border-radius: 6px;
+
   padding: .6rem 1rem;
+  border-radius: 6px;
+  background:#0D6EFD;
+  color: #fff;
+  box-shadow: 15px 15px 30px #5a5a5a, -15px -15px 30px #ffffff;
+  margin-top: 35px;
   opacity: 1;
 }
 
-.task-done {
-  opacity: 0;
-  transition: opacity .3s;
+.task--done {
+  opacity: 0.5;
 }
+
+.icon-trash {
+  border: none;
+  background:#0D6EFD;
+}
+
