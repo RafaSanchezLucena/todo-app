@@ -15,10 +15,12 @@
   box-shadow: 15px 15px 30px #5a5a5a, -15px -15px 30px #ffffff;
   margin-top: 35px;
   opacity: 1;
+  transition: opacity 0.4s;
 }
 
 .task--done {
   opacity: 0.5;
+  transition: opacity 0.4s;
 }
 
 .icon-trash {

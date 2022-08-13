@@ -20,9 +20,7 @@ const loadInitial = () => {
         index
       ) => /*html*/ `<div id="${index}" class="task animate__animated">
                                 <div class="form-check">
-                                  <input onchange="done(${index})" value="true" class="form-check-input"          type="checkbox" id="${
-        index + 100
-      }">
+                                  <input onchange="done(${index})" value="true" class="form-check-input"          type="checkbox" id="${index + 100}">
                                     <label class="form-check-label" for="defaultCheck1">
                                     <p class="h5">${elemento.description}</p>
                                     </label>
@@ -73,9 +71,7 @@ const loadTasks = () => {
       index
     ) => /*html*/ `<div id="${index}" class="task animate__animated">
                                 <div class="form-check">
-                                  <input onchange="done(${index})" value="true" class="form-check-input"       type="checkbox" id="${
-      index + 100
-    }">
+                                  <input onchange="done(${index})" value="true" class="form-check-input"       type="checkbox" id="${index + 100}">
                                     <label class="form-check-label" for="defaultCheck1"> <p class="h5">${
                                       elemento.description
                                     }</p></label>
@@ -92,7 +88,7 @@ const loadTasks = () => {
   tasksContainer.innerHTML = data.join("");
 
   // Cada vez que carga la página comprueba si el valor de "state" es "true" y le aplica el estilo.
-  // También deja la casilla checkbox en "checked".
+  // También deja la el estado de la casilla checkbox que tenía cuando se cerró el navegador. 
   datos.forEach((element, index) => {
     if (element.state === true) {
       let indice = index + 100;
@@ -104,7 +100,9 @@ const loadTasks = () => {
 
 // Elimina una tarea
 window.deleteTask = (index) => {
+  // En primer lugar aplicamos la animación.
   document.getElementById(index).classList.add("animate__zoomOut");
+  // En segundo lugar  eliminamos la tarea pero esperamos medio segundo para que termine de ejecutarse la animación.
   setTimeout(() => {
     tasksList.splice(index, 1);
     localStorage.setItem("tasks", JSON.stringify(tasksList));
@@ -112,8 +110,8 @@ window.deleteTask = (index) => {
   }, 500);
 };
 
-// Aplica el estilo cuando marcamos la casilla del checkbox al si el valor de la propiedad "state" es
-// "true" y lo volvemos a "false" cuando la desactivamos.
+// Aplica el estilo cuando marcamos la casilla del checkbox si el valor de la propiedad "state" es
+// "true", y lo volvemos a "false" cuando la desactivamos.
 window.done = (index) => {
   tasksList[index].state === false
     ? (tasksList[index].state = true)
