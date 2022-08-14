@@ -3,9 +3,9 @@ const tasksContainer = document.querySelector(".container-tasks");
 export const task = (document.querySelector(
   ".container-form"
 ).innerHTML = /*html*/ `<label for="inputText" class="tarea fs-2">Nueva tarea:</label>
-        <input id="inputText" onchange="newTask()" type="text" class="form-control" autofocus placeholder="Introduce el texto">`);
+        <input autocomplete="off" id="inputText" onchange="newTask()" type="text" class="form-control" autofocus placeholder="Introduce el texto">`);
 
-var tasksList = [];
+var tasks = [];
 
 const loadInitial = () => {
   // Limpia la pantalla antes de pintar los elementos.
@@ -33,8 +33,8 @@ const loadInitial = () => {
     tasksContainer.innerHTML = data.join("");
 
     // Aplica estilo según el valor de "state".
-    datos.forEach((element, index) => {
-      if (element.state === true) {
+    datos.forEach((dato, index) => {
+      if (dato.state === true) {
         let indice = index + 100;
         document.getElementById(index).classList.add("task--done");
         document.getElementById(indice).checked = true;
@@ -42,7 +42,7 @@ const loadInitial = () => {
     });
     // Asigna al array de objetos los datos obtenidos del localStorage, ya que al iniciar el navegador
     // el array está vacío.
-    datos.forEach((elemento) => tasksList.push(elemento));
+    datos.forEach((elemento) => tasks.push(elemento));
   }
 };
 
@@ -52,9 +52,9 @@ loadInitial();
 // los datos en pantalla.
 window.newTask = () => {
   let description = inputText.value;
-  let newTask = { description, state: false };
-  tasksList.push(newTask);
-  localStorage.setItem("tasks", JSON.stringify(tasksList));
+  let task = { description, state: false };
+  tasks.push(task);
+  localStorage.setItem("tasks", JSON.stringify(tasks));
   loadTasks();
 };
 
@@ -89,8 +89,8 @@ const loadTasks = () => {
 
   // Cada vez que carga la página comprueba si el valor de "state" es "true" y le aplica el estilo.
   // También deja la el estado de la casilla checkbox que tenía cuando se cerró el navegador. 
-  datos.forEach((element, index) => {
-    if (element.state === true) {
+  datos.forEach((dato, index) => {
+    if (dato.state === true) {
       let indice = index + 100;
       document.getElementById(index).classList.add("task--done");
       document.getElementById(indice).checked = true;
@@ -104,8 +104,8 @@ window.deleteTask = (index) => {
   document.getElementById(index).classList.add("animate__zoomOut");
   // En segundo lugar  eliminamos la tarea pero esperamos medio segundo para que termine de ejecutarse la animación.
   setTimeout(() => {
-    tasksList.splice(index, 1);
-    localStorage.setItem("tasks", JSON.stringify(tasksList));
+    tasks.splice(index, 1);
+    localStorage.setItem("tasks", JSON.stringify(tasks));
     loadTasks();
   }, 500);
 };
@@ -113,13 +113,13 @@ window.deleteTask = (index) => {
 // Aplica el estilo cuando marcamos la casilla del checkbox si el valor de la propiedad "state" es
 // "true", y lo volvemos a "false" cuando la desactivamos.
 window.done = (index) => {
-  tasksList[index].state === false
-    ? (tasksList[index].state = true)
-    : (tasksList[index].state = false);
-  if (tasksList[index].state === true) {
+  tasks[index].state === false
+    ? (tasks[index].state = true)
+    : (tasks[index].state = false);
+  if (tasks[index].state === true) {
     document.getElementById(index).classList.add("task--done");
   } else {
     document.getElementById(index).classList.remove("task--done");
   }
-  localStorage.setItem("tasks", JSON.stringify(tasksList));
+  localStorage.setItem("tasks", JSON.stringify(tasks));
 };
