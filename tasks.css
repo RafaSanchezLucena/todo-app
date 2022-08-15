@@ -7,15 +7,20 @@
 }
 
 .task {
-
+  background:#0D6EFD;
   padding: .6rem 1rem;
   border-radius: 6px;
-  background:#0D6EFD;
   color: #fff;
   box-shadow: 15px 15px 30px #5a5a5a, -15px -15px 30px #ffffff;
   margin-top: 35px;
   opacity: 1;
   transition: opacity 0.4s;
+  transition: background-color 0.3s;
+}
+
+.priority--high {
+  background: #DC3545;
+  transition: background-color 0.3s;
 }
 
 .task--done {
@@ -23,8 +28,22 @@
   transition: opacity 0.4s;
 }
 
-.icon-trash {
+.icon {
   border: none;
+  background:#0D6EFD;
+  transition: background-color 0.3s;
+}
+
+.icon:hover {
   background:#0D6EFD;
 }
 
+.icon--priority {
+  border: none;
+  background:#DC3545;
+  transition: background-color 0.3s;
+}
+
+.icon--priority:hover {
+  background:#DC3545;
+}

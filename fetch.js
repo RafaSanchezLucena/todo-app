@@ -33,7 +33,7 @@ export const obtenerDatos = async (city) => {
     div.innerHTML = /*html*/ `<div class="weather">
                       <div class="header">
                       <span class="poblacion">${city}</span>
-                      <button  title="Elige otra población." type="button" id="icono" onclick="changeCity()" class="icon"><span class="material-symbols-outlined"> settings </span></button><br>
+                      <button  title="Elige otra población." type="button" id="icono" onclick="changeCity()" class="icono"><span class="material-symbols-outlined"> settings </span></button><br>
 
                       <span class="region">${region}</span>
                       <span class="country">(${country})</span>
