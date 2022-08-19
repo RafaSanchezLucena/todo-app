@@ -39,13 +39,21 @@ const loadInitial = () => {
     // Pinta las tareas en pantalla.
     tasksContainer.innerHTML = data.join("");
 
-    // Aplica estilo según el valor de "state".
+    // Aplica estilo según el valor de "done".
     datos.forEach((dato, index) => {
-      if (dato.state === true) {
+      if (dato.new === true) {
+        document.getElementById(index).classList.add("animate__zoomIn");
+        setTimeout(() => {
+          document.getElementById(index).classList.remove("animate__zoomIn");
+        }, 1000);
+      }
+
+      if (dato.done === true) {
         let indice = index + 100;
         document.getElementById(index).classList.add("task--done");
         document.getElementById(indice).checked = true;
       }
+
       if (dato.priority === "high") {
         let indice2 = index + 150;
         let indice3 = index + 200;
@@ -66,7 +74,7 @@ loadInitial();
 // los datos en pantalla.
 window.newTask = () => {
   let description = inputText.value;
-  let task = { description, state: false, priority: "low" };
+  let task = { description, done: false, priority: "low", new: false };
   tasks.push(task);
   localStorage.setItem("tasks", JSON.stringify(tasks));
   loadTasks();
@@ -108,10 +116,20 @@ const loadTasks = () => {
   // Pinta las tareas en pantalla.
   tasksContainer.innerHTML = data.join("");
 
-  // Cada vez que carga la página comprueba si el valor de "state" es "true" y le aplica el estilo.
+  // Cada vez que carga la página comprueba si el valor de "done" es "true" y le aplica el estilo.
   // También asigna el estado de la casilla checkbox que tenía cuando se cerró el navegador.
   datos.forEach((dato, index) => {
-    if (dato.state === true) {
+    // Animación al crear la tarea.
+    if (dato.new === false) {
+      document.getElementById(index).classList.add("animate__zoomIn");
+      tasks[index].new = true;
+      localStorage.setItem("tasks", JSON.stringify(tasks));
+      setTimeout(() => {
+        document.getElementById(index).classList.remove("animate__zoomIn");
+      }, 1000);
+    }
+
+    if (dato.done === true) {
       let indice = index + 100;
       document.getElementById(index).classList.add("task--done");
       document.getElementById(indice).checked = true;
@@ -175,15 +193,16 @@ window.setPriority = (index) => {
   }, 400);
 };
 
-// Aplica el estilo cuando marcamos la casilla del checkbox, cambiamos el valor de la propiedad "state" a
+// Aplica el estilo cuando marcamos la casilla del checkbox, cambiamos el valor de la propiedad "done" a
 // "true", y lo volvemos a "false" cuando la desactivamos.
 window.done = (index) => {
-  tasks[index].state === false
-    ? (tasks[index].state = true)
-    : (tasks[index].state = false);
-  if (tasks[index].state === true) {
+  tasks[index].done === false
+    ? (tasks[index].done = true)
+    : (tasks[index].done = false);
+  if (tasks[index].done === true) {
     document.getElementById(index).classList.add("task--done");
   } else {
+    document.getElementById(index).classList.add("task--nodone");
     document.getElementById(index).classList.remove("task--done");
   }
   localStorage.setItem("tasks", JSON.stringify(tasks));
