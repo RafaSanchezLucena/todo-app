@@ -1,0 +1,503 @@
+[
+  {
+    "nombre": "Informatica General",
+    "numero": 537403
+  },
+  {
+    "nombre": "Informatica Noelia",
+    "numero": 413000
+  },
+  {
+    "nombre": "Informatica 2 Mª Jesus",
+    "numero": 413074
+  },
+  {
+    "nombre": "Informatica 1 Paco",
+    "numero": 413156
+  },
+  {
+    "nombre": "Informatica 7 David",
+    "numero": 413171
+  },
+  {
+    "nombre": "Informatica 3 Ana",
+    "numero": 413173
+  },
+  {
+    "nombre": "Informatica 4",
+    "numero": 413181
+  },
+  {
+    "nombre": "Informatica 5 Maribel",
+    "numero": 413183
+  },
+  {
+    "nombre": "Informatica 6",
+    "numero": 413211
+  },
+  {
+    "nombre": "Anatomia Patologica Laboratorio",
+    "numero": 413040
+  },
+  {
+    "nombre": "Anatomia Patologica Jefe de Servicio",
+    "numero": 413041
+  },
+  {
+    "nombre": "Anatomia Patologica Despacho 1",
+    "numero": 528833
+  },
+  {
+    "nombre": "Anatomia Patologica Despacho 2",
+    "numero": 413066
+  },
+  {
+    "nombre": "Anatomia Patologica Secretaria Miguel",
+    "numero": 537414
+  },
+  {
+    "nombre": "Cocina",
+    "numero": 413019
+  },
+  {
+    "nombre": "Cocina Jefe de Servicio",
+    "numero": 537416
+  },
+  {
+    "nombre": "Cocina Gobernanta",
+    "numero": 528829
+  },
+  {
+    "nombre": "Cocina Dietista",
+    "numero": 528945
+  },
+  {
+    "nombre": "Plancha",
+    "numero": 413001
+  },
+  {
+    "nombre": "Plancha Gobernanta",
+    "numero": 537412
+  },
+  {
+    "nombre": "Esterilizacion Zona Sucia",
+    "numero": 413020
+  },
+  {
+    "nombre": "Esterilizacion Sala Estar",
+    "numero": 537421
+  },
+  {
+    "nombre": "Sindicado UGT",
+    "numero": 537464
+  },
+  {
+    "nombre": "Sindicado CCOO",
+    "numero": 528883
+  },
+  {
+    "nombre": "Sindicado SATSE",
+    "numero": 528884
+  },
+  {
+    "nombre": "Sindicado SAE",
+    "numero": 528885
+  },
+  {
+    "nombre": "Sindicado UGT",
+    "numero": 537464
+  },{
+    "nombre": "Sindicado STSPV",
+    "numero": 528886
+  },
+  {
+    "nombre": "Sindicado SIMAP CSIF",
+    "numero": 528887
+  },
+  {
+    "nombre": "Archivos General",
+    "numero": 528964
+  },
+  {
+    "nombre": "Archivos 1",
+    "numero": 413134
+  },
+  {
+    "nombre": "Archivos 2",
+    "numero": 413135
+  },
+  {
+    "nombre": "Documentacion Clinica",
+    "numero": 528821
+  },
+  {
+    "nombre": "Codificacion",
+    "numero": 528823
+  },
+  {
+    "nombre": "Comisiones Clinicas",
+    "numero": 528898
+  },
+  {
+    "nombre": "Almacen Muelle Descarga",
+    "numero": 537417
+  },
+  {
+    "nombre": "Almacen General",
+    "numero": 537458
+  },
+  {
+    "nombre": "Mantenimiento Oficina Tecnica",
+    "numero": 582943
+  },
+  {
+    "nombre": "Mantenimiento Ingeniero 1",
+    "numero": 537409
+  },
+  {
+    "nombre": "Mantenimiento Ingeniero 2",
+    "numero": 537495
+  },
+  {
+    "nombre": "Mantenimiento Mecanicos",
+    "numero": 413006
+  },
+  {
+    "nombre": "Mantenimiento Fontaneros",
+    "numero": 413008
+  },
+  {
+    "nombre": "Mantenimiento Electromedicina",
+    "numero": 413084
+  },
+  {
+    "nombre": "Mantenimiento Electricistas",
+    "numero": 537459
+  },
+  {
+    "nombre": "Mantenimiento Calefactores",
+    "numero": 528992
+  },
+  {
+    "nombre": "Farmacia Almacen",
+    "numero": 413003
+  },
+  {
+    "nombre": "Farmacia Campana",
+    "numero": 413004
+  },
+  {
+    "nombre": "Farmacia Administracion 1",
+    "numero": 413208
+  },
+  {
+    "nombre": "Farmacia Administracion 2",
+    "numero": 413209
+  },
+  {
+    "nombre": "Farmacia Administracion",
+    "numero": 537410
+  },
+  {
+    "nombre": "Farmacia Unidosis",
+    "numero": 528827
+  },
+  {
+    "nombre": "Farmacia Jefe de Servicio",
+    "numero": 528828
+  },
+  {
+    "nombre": "Resonancia Magnetica",
+    "numero": 413047
+  },
+  {
+    "nombre": "Rehabilitacion Secretaria",
+    "numero": 537424
+  },
+  {
+    "nombre": "Rehabilitacion Jefe de Servicio",
+    "numero": 528826
+  },
+  {
+    "nombre": "Rehabilitacion Supervisor",
+    "numero": 528905
+  },
+  {
+    "nombre": "Rehabilitacion Consulta",
+    "numero": 528946
+  },
+  {
+    "nombre": "Rehabilitacion Gimnasio",
+    "numero": 413039
+  },
+  {
+    "nombre": "Cafeteria",
+    "numero": 537415
+  },
+  {
+    "nombre": "Consultas Supervisor",
+    "numero": 528802
+  },
+  {
+    "nombre": "Consultas Ginecologia Nº 1",
+    "numero": 528893
+  },
+  {
+    "nombre": "Consultas Ginecologia Nº 2",
+    "numero": 413119
+  },
+  {
+    "nombre": "Consultas Cardiologia Nº 3",
+    "numero": 413118
+  },
+  {
+    "nombre": "Consultas Cardiologia Nº 4",
+    "numero": 413117
+  },
+  {
+    "nombre": "Consultas Medicina Interna Nº 5",
+    "numero": 413116
+  },
+  {
+    "nombre": "Consultas Reumatologia Nº 7",
+    "numero": 413115
+  },
+  {
+    "nombre": "Consultas Reumatologia Nº 8",
+    "numero": 537492
+  },
+  {
+    "nombre": "Consultas Traumatologia Nº 9A",
+    "numero": 413022
+  },
+  {
+    "nombre": "Consultas Traumatologia Yesos Nº 9B",
+    "numero": 537423
+  },
+  {
+    "nombre": "Consultas Traumatologia Nº 9C",
+    "numero": 413021
+  },
+  {
+    "nombre": "Consultas Endocrino Nº 6",
+    "numero": 528947
+  },
+  {
+    "nombre": "Consultas Endocrino Nº 10",
+    "numero": 413111
+  },
+  {
+    "nombre": "Consultas Alergia Nº 11",
+    "numero": 413110
+  },
+  {
+    "nombre": "Consultas Alergia Nº 13",
+    "numero": 413107
+  },
+  {
+    "nombre": "Consultas Toco-Ginecologia Nº 14",
+    "numero": 413027
+  },
+  {
+    "nombre": "Consultas Pediatria Nº 15",
+    "numero": 413029
+  },
+  {
+    "nombre": "Consultas Pediatria Nº 16",
+    "numero": 413028
+  },
+  {
+    "nombre": "Consultas Endocrino Nº 17",
+    "numero": 413049
+  },
+  {
+    "nombre": "Consultas Endocrino Nº 18",
+    "numero": 413046
+  },
+  {
+    "nombre": "Consultas Cirugia Nº 19",
+    "numero": 413025
+  },
+  {
+    "nombre": "Consultas Cirugia Nº 20",
+    "numero": 413024
+  },
+  {
+    "nombre": "Consultas Cirugia Nº 21",
+    "numero": 413023
+  },
+  {
+    "nombre": "Consultas ORL Nº 23",
+    "numero": 413036
+  },
+  {
+    "nombre": "Consultas ORL Nº 24",
+    "numero": 413048
+  },
+  {
+    "nombre": "Consultas Urologia Nº 28",
+    "numero": 413031
+  },
+  {
+    "nombre": "Consultas Urologia Nº 29",
+    "numero": 537493
+  },
+  {
+    "nombre": "Consultas Digestivo Nº 30",
+    "numero": 413035
+  },
+  {
+    "nombre": "Consultas Digestivo Nº 31",
+    "numero": 413045
+  },
+  {
+    "nombre": "Consultas Pneumo Nº 32",
+    "numero": 413042
+  },
+  {
+    "nombre": "Consultas Pneumo Espirometrias Nº 33",
+    "numero": 413033
+  },
+  {
+    "nombre": "Consultas Neurologia Nº 34",
+    "numero": 413215
+  },
+  {
+    "nombre": "Consultas Neurologia Nº 35",
+    "numero": 537491
+  },
+  {
+    "nombre": "Consultas Neurologia Nº 36",
+    "numero": 413216
+  },
+  {
+    "nombre": "Consultas Hematologia Nº 43",
+    "numero": 537489
+  },
+  {
+    "nombre": "Consultas Oftalmologia Optometria Nº 73",
+    "numero": 413032
+  },
+  {
+    "nombre": "Consultas Oftalmologia Nº 77",
+    "numero": 413215
+  },
+  {
+    "nombre": "Consultas Oftalmologia Nº 72",
+    "numero": 413213
+  },
+  {
+    "nombre": "Consultas Oftalmologia Nº 75",
+    "numero": 537418
+  },
+  {
+    "nombre": "Consultas Oftalmologia Nº 76",
+    "numero": 528805
+  },
+  {
+    "nombre": "Consultas Oftalmologia Urgencias",
+    "numero": 528948
+  },
+  {
+    "nombre": "Consultas Cita Previa",
+    "numero": 528800
+  },
+  {
+    "nombre": "Consultas Cita Previa 1",
+    "numero": 413101
+  },
+  {
+    "nombre": "Consultas Cita Previa 2",
+    "numero": 413102
+  },
+  {
+    "nombre": "Consultas HVL Cita Previa",
+    "numero": 413164
+  },
+  {
+    "nombre": "Consultas Cita Previa Laboratorio",
+    "numero": 537404
+  },
+  {
+    "nombre": "Seguridad",
+    "numero": 413057
+  },
+  {
+    "nombre": "IVO",
+    "numero": 413056
+  },
+  {
+    "nombre": "CALL CENTER",
+    "numero": 537400
+  },
+  {
+    "nombre": "UDCA Admision",
+    "numero": 537420
+  },
+  {
+    "nombre": "UDCA Admision Mostrador 1",
+    "numero": 528850
+  },
+  {
+    "nombre": "UDCA Admision Mostrador 2",
+    "numero": 528909
+  },
+  {
+    "nombre": "UDCA Admision Administracion",
+    "numero": 528848
+  },
+  {
+    "nombre": "UDCA Admision Juanjo",
+    "numero": 528847
+  },
+  {
+    "nombre": "UDCA Admision (Mª Angeles)",
+    "numero": 537463
+  },
+  {
+    "nombre": "UDCA Admision Jose Enrique",
+    "numero": 528823
+  },
+  {
+    "nombre": "UDCA Admision Enfermeria",
+    "numero": 528842
+  },
+  {
+    "nombre": "Paritorio 1",
+    "numero": 413002
+  },
+  {
+    "nombre": "Paritorio 2",
+    "numero": 413007
+  },
+  {
+    "nombre": "Paritorio Dilatacion 1",
+    "numero": 413014
+  },
+  {
+    "nombre": "Paritorio Dilatacion 2",
+    "numero": 413015
+  },
+  {
+    "nombre": "Paritorio Sala Monitores",
+    "numero": 413061
+  },
+  {
+    "nombre": "Paritorio Consulta Urgencias Obstetricia",
+    "numero": 413062
+  },
+  {
+    "nombre": "Paritorio Sala de Estar",
+    "numero": 537450
+  },
+  {
+    "nombre": "Paritorio Consulta Urgencias Ginecologia",
+    "numero": 537477
+  },
+  {
+    "nombre": "Paritorio Sala Medicos",
+    "numero": 537478
+  }
+
+
+]
