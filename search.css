@@ -9,11 +9,13 @@
 
 #inputFile{
   width: 100%;
-  
 }
 
 #introduccion {
   width: 100%;
   font-size: 18px;
- 
+}
+
+.lista {
+  font-size: 18px;
 }

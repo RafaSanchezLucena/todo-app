@@ -2,11 +2,11 @@ export const search = (document.querySelector(
   ".container-search"
 ).innerHTML = /*html*/ `
   <div>
-   <h3>Buscador núm. teléfono:</h3>
+   <h3><strong>Buscador número teléfono:</strong></h3>
    <input type="file" class="input btn btn-secondary" onchange="readFile(this)" id="inputFile" >
    <p class="aviso" style="color:#DC3545">Necesitas seleccionar un archivo para poder iniciar la búsqueda.</p>
-   <input type="text" class="form-control" onkeyup="searchNumber(value)" id="introduccion" placeholder="Introduce..." >
-   <h5>Resultado de la búsqueda:</h5>
+   <input type="text" class="form-control" onkeyup="searchNumber(value)" id="introduccion" placeholder="Introduce los datos..." >
+   <h5><strong>Resultado de la búsqueda:</strong></h5>
    <ul class="lista"></ul>
   </div>
 `);
@@ -49,6 +49,6 @@ window.searchNumber = (value) => {
   } else {
     document.querySelector(
       ".lista"
-    ).innerHTML = `<h5><strong>Sin resultados...</strong<</h5>`;
+    ).innerHTML = `<h5>Sin resultados...</h5>`;
   }
 };
