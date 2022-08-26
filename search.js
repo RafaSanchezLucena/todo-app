@@ -17,10 +17,10 @@ const phoneBook = [];
 window.readFile = (input) => {
   document.querySelector(
     ".aviso"
-  ).innerHTML = `<span style="color:#0D6EFD"> Archivo seleccionado.</span>`;
+  ).innerHTML = /*html*/ `<span style="color:#0D6EFD"> Archivo seleccionado.</span>`;
   let file = input.files[0];
   let reader = new FileReader();
-  reader.readAsText(file);  // Convierte el fichero en texto.
+  reader.readAsText(file); // Convierte el fichero en texto.
   reader.onload = () => {
     let data = JSON.parse(reader.result);
     data.forEach((element) => {
@@ -30,7 +30,7 @@ window.readFile = (input) => {
   reader.onerror = () => {
     document.querySelector(
       ".lista"
-    ).innerHTML = `Ha ocurrido el siguiente error: ${reader.error}`;
+    ).innerHTML = /*html*/ `Ha ocurrido el siguiente error: ${reader.error}`;
   };
 };
 
@@ -49,6 +49,6 @@ window.searchNumber = (value) => {
   } else {
     document.querySelector(
       ".lista"
-    ).innerHTML = `<h5>Sin resultados...</h5>`;
+    ).innerHTML = /*html*/ `<h5>Sin resultados...</h5>`;
   }
 };
