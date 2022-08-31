@@ -2,9 +2,9 @@ export const search = (document.querySelector(
   ".container-search"
 ).innerHTML = /*html*/ `
   <div>
-   <h3><strong>Buscador número teléfono:</strong></h3>
-   <input type="file" class="input btn btn-secondary" onchange="readFile(this)" id="inputFile" >
-   <p class="aviso" style="color:#DC3545">Necesitas seleccionar un archivo para poder iniciar la búsqueda.</p>
+   <h3><strong>Busca:</strong></h3>
+   <input type="file" class="input btn btn-primary" onchange="readFile(this)" id="inputFile" >
+   <p class="aviso" style="color:#DC3545">Archivo de datos requerido.</p>
    <input type="text" class="form-control" onkeyup="searchNumber(value)" id="introduccion" placeholder="Introduce los datos..." >
    <h5><strong>Resultado de la búsqueda:</strong></h5>
    <ul class="lista"></ul>
@@ -17,7 +17,7 @@ const phoneBook = [];
 window.readFile = (input) => {
   document.querySelector(
     ".aviso"
-  ).innerHTML = /*html*/ `<span style="color:#0D6EFD"> Archivo seleccionado.</span>`;
+  ).innerHTML = /*html*/ `<span style="color:#0D6EFD"> Ok.</span>`;
   let file = input.files[0];
   let reader = new FileReader();
   reader.readAsText(file); // Convierte el fichero en texto.
