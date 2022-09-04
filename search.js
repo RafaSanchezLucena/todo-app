@@ -17,7 +17,7 @@ const phoneBook = [];
 window.readFile = (input) => {
   document.querySelector(
     ".aviso"
-  ).innerHTML = /*html*/ `<span style="color:#0D6EFD"> Ok.</span>`;
+  ).innerHTML = " ";
   let file = input.files[0];
   let reader = new FileReader();
   reader.readAsText(file); // Convierte el fichero en texto.
